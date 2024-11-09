@@ -2,8 +2,7 @@ from fastapi import APIRouter, BackgroundTasks, HTTPException
 from pydantic import BaseModel, HttpUrl
 from .llm import get_gemini_response
 from .callback import send_callback
-import asyncio
-from .logging_config import get_logger  # Импортируем логгер
+from .logging_config import get_logger  
 
 router = APIRouter()
 logger = get_logger()
